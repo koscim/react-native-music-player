@@ -17,7 +17,7 @@ renderThirdLayer = (percent) => {
   }
 }
 
-const ProgressCircle = ({percent}) => {
+const ProgressCircle = ({image, percent}) => {
   let firstProgressLayerStyle;
   if (percent > 50) {
     firstProgressLayerStyle = this.progressStyle(50, -135);
@@ -33,7 +33,7 @@ const ProgressCircle = ({percent}) => {
       <View style={styles.artistImageDiv}>
         <Image
           style={styles.artistImage}
-          source={{ uri: remote }}
+          source={{ uri: image }}
         />
       </View>
     </View>
@@ -121,10 +121,3 @@ const styles = StyleSheet.create({
 });
 
 export default ProgressCircle;
-
-// <View style={styles.innerDiv}>
-//   <View style={styles.songDurationDiv}>
-//     <Text style={styles.currentDuration}>0:10</Text>
-//     <Text style={styles.endDuration}>/3:15</Text>
-//   </View>
-// </View>
