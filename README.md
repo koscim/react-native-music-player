@@ -10,4 +10,4 @@ If Xcode is set up:
 - To specify the device the simulator should run on use the ```--simulator``` flag followed by the device name such as ```react-native run-ios --simulator="iPhone 7"```.
 
 If Android Studio and SDK Tools are set up:
-- To run on android, type the ```react-native run-android``` command into the terminal.
+- To run on android simulator, type the ```react-native run-android``` command into the terminal.
